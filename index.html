@@ -1,220 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
     <style>
-        table {
-            width: 600px;
-            text-align: left;
-        }
+      table {
+        width: 600px;
+        text-align: left;
+      }
 
-        table,
-        tr,
-        th,
-        td {
-            border: 1px solid;
-            border-collapse: collapse;
-        }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
 
-        th {
-            background-color: green;
-        }
+      th {
+        background-color: green;
+      }
 
-        table tr:nth-child(even) {
-            background-color: grey;
+      table tr:nth-child(even) {
+        background-color: grey;
+      }
 
-        }
+      .login {
+        background-color: grey;
+        color: white;
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+      }
 
-        .login {
-            background-color: grey;
-            color: white;
-            justify-content: space-between;
-            text-align: center;
-            display: flex;
-        }
-
-        button {
-            background-color: green;
-            cursor: pointer;
-            justify-content: space-between;
-
-        }
+      button {
+        background-color: green;
+        cursor: pointer;
+        justify-content: space-between;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>hi boss</h1>
     <table>
-        <tr>
-            <th>maqaa</th>
-            <th>saala</th>
-            <th>umrii</th>
-            <th>hojii</th>
-        </tr>
-        <tr>
-            <td>nasir mohammad</td>
-            <td>dhiira</td>
-            <td>21</td>
-            <td>barataadha.</td>
-        </tr>
-        <tr>
-            <td>chala turoo</td>
-            <td> dhiira</td>
-            <td>24</td>
-            <td>daldalaadha.</td>
-
-        </tr>
-        <tr>
-            <td>boontuu sis</td>
-            <td>dubraa</td>
-            <td>25</td>
-            <td>jobless</td>
-
-        </tr>
-        <tr>
-            <td>daraartu</td>
-            <td>dubartii</td>
-            <td>23</td>
-            <td>barattuu.</td>
-        </tr>
+      <tr>
+        <th>maqaa</th>
+        <th>saala</th>
+        <th>umrii</th>
+        <th>hojii</th>
+      </tr>
+      <tr>
+        <td>nasir mohammad</td>
+        <td>dhiira</td>
+        <td>21</td>
+        <td>barataadha.</td>
+      </tr>
+      <tr>
+        <td>chala turoo</td>
+        <td>dhiira</td>
+        <td>24</td>
+        <td>daldalaadha.</td>
+      </tr>
+      <tr>
+        <td>boontuu sis</td>
+        <td>dubraa</td>
+        <td>25</td>
+        <td>jobless</td>
+      </tr>
+      <tr>
+        <td>daraartu</td>
+        <td>dubartii</td>
+        <td>23</td>
+        <td>barattuu.</td>
+      </tr>
     </table>
 
-    <div class=" login-container">
-        <h1>registratoin </h1>
-        <form>
-            <label>full name</label>
-            <br>
-            <input type="fname" placeholder="" required>
-            <br>
-            <label>lname</label>
-            <br>
-            <input type="lname" placeholder="lname" required>
-            <br>
-            <label>email</label>
-            <br>
-            <input type="email" placeholder="email" required>
-            <br>
-            <label>username</label>
-            <br><input type="usernme" placeholder="usernme" required>
-            <br>
-            <label>password</label><br><input type="password" placeholder="your password" pattern="{5,10}" required
-                title="please enter the password of length 5 to 10">
-            <br>
-            <br>
-            <input type="submit" value="sign in">
-        </form>
+    <div class="login-container">
+      <h1>registratoin</h1>
+      <form>
+        <label>full name</label>
+        <br />
+        <input
+          type="fname"
+          placeholder=""
+          required
+        />
+        <br />
+        <label>lname</label>
+        <br />
+        <input
+          type="lname"
+          placeholder="lname"
+          required
+        />
+        <br />
+        <label>email</label>
+        <br />
+        <input
+          type="email"
+          placeholder="email"
+          required
+        />
+        <br />
+        <label>username</label>
+        <br /><input
+          type="usernme"
+          placeholder="usernme"
+          required
+        />
+        <br />
+        <label>password</label><br /><input
+          type="password"
+          placeholder="your password"
+          pattern="{5,10}"
+          required
+          title="please enter the password of length 5 to 10"
+        />
+        <br />
+        <br />
+        <input type="submit" value="sign in" />
+      </form>
     </div>
     <div class="">
-
-        <h3>Select Your Favorite Fruit</h3>
-        <form>
-            <label>
-                <input type="radio" value="apple">
-                apple
-                <br>
-            </label>
-            <label>
-                <input type="radio" name="Fruit" value="mango">
-                mango
-                <br>
-
-            </label>
-            <label>
-                <input type="radio" name="Fruit" value="banana">
-                banana <br>
-            </label>
-            <label>
-                <input type="submit" value="submit">
-            </label>
-        </form>
+      <h3>Select Your Favorite Fruit</h3>
+      <form>
+        <label>
+          <input type="radio" value="apple" />
+          apple
+          <br />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="Fruit"
+            value="mango"
+          />
+          mango
+          <br />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="Fruit"
+            value="banana"
+          />
+          banana <br />
+        </label>
+        <label>
+          <input type="submit" value="submit" />
+        </label>
+      </form>
     </div>
     <h3>choose your gender</h3>
     <form>
+      <label>
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+        />
+        female
+        <br />
         <label>
-            <input type="radio" name="gender" value="female">
-            female
-            <br>
-            <label>
-                <input type="radio" name="gender" value="male">
-                male <br>
-            </label>
-            <label> <input type="radio" name="gender" value="none">
-                none <br>
-
-            </label>
-            <label>
-                <input type="submit" value="login">
-            </label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+          />
+          male <br />
         </label>
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="none"
+          />
+          none <br />
+        </label>
+        <label>
+          <input type="submit" value="login" />
+        </label>
+      </label>
     </form>
-    <h3>choose the subject </h3>
+    <h3>choose the subject</h3>
     <form>
-        <label>
-            <input type="checkbox" name="mathematics " value="yes">
-            mathematics
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="html" value="yes">
-            html
-        </label>
-        <br>
-        <input type="submit" value="Submit">
+      <label>
+        <input
+          type="checkbox"
+          name="mathematics "
+          value="yes"
+        />
+        mathematics
+      </label>
+      <br />
+      <label>
+        <input
+          type="checkbox"
+          name="html"
+          value="yes"
+        />
+        html
+      </label>
+      <br />
+      <input type="submit" value="Submit" />
     </form>
     <label for="fruits">Choose a fruit:</label>
     <select id="fruits" name="fruits">
+      <option value="apple">Apple</option>
 
-        <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
 
-        <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
 
-        <option value="cherry">Cherry</option>
+      <option value="date">Date</option>
 
-        <option value="date">Date</option>
-
-        <option value="fig">Fig</option>
+      <option value="fig">Fig</option>
     </select>
-    <br>
+    <br />
 
     <label for="city"> choose the city</label>
     <select name="city" id="city">
-        <option value=""> jimma</option>
-        <option value="adaama"> adaama</option>
-        <option value="bulee horaa"> bulee horaa</option>
-        <option value="adoola"> adoola</option>
-        <option value="negelle">negelle</option>
-        <option value="shakkisoo">shakkisoo</option>
-        <option value="boore">boore</option>
-        <option value="asallaa">asallaa</option>
-        <option value="nekamtee">nekamte</option>
+      <option value="">jimma</option>
+      <option value="adaama">adaama</option>
+      <option value="bulee horaa">
+        bulee horaa
+      </option>
+      <option value="adoola">adoola</option>
+      <option value="negelle">negelle</option>
+      <option value="shakkisoo">shakkisoo</option>
+      <option value="boore">boore</option>
+      <option value="asallaa">asallaa</option>
+      <option value="nekamtee">nekamte</option>
     </select>
-    <br>
+    <br />
     <form>
-        <label for="comments">Comments:</label>
-        <br>
-        <br>
-        <textarea name="comments" id="comment" rows="4" cols="40"></textarea>
-        <br>
-        <input type="submit" value="submit">
+      <label for="comments">Comments:</label>
+      <br />
+      <br />
+      <textarea
+        name="comments"
+        id="comment"
+        rows="4"
+        cols="40"
+      ></textarea>
+      <br />
+      <input type="submit" value="submit" />
 
-        <input type="reset" value="reset">
+      <input type="reset" value="reset" />
     </form>
     <h1>list emoji</h1>
     <p>grinnig face : <span>😀</span></p>
     <h1>Emoji List:</h1>
 
-    <p>Grinning face : <span> 😀 </span> </p>
-    <video controls width="100" height="80">
-        <source src="/and.mp4/Bilillee___Andualem_Gosa___New_Oromo_Music_Video_2024(360p).mp4 ">
-        Your browser does not support the video tag.
-
-    </video>
-
-
-
-</body>
-
+    <p>Grinning face : <span> 😀 </span></p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/H3XIJYEPdus"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </body>
 </html>
